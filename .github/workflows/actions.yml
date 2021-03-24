@@ -5,6 +5,8 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
+      - name : Chackout Repository
+        uses: actions/checkout@v2
       - name: List File
         run: |
           pwd
