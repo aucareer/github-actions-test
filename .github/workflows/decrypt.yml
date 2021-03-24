@@ -6,8 +6,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Decrypt file
-        run: gpg --quiet --batch --yes --decrypt -passphrase="$PASSPHRASE" --output $HOME/secret.json secret.json.gpg
+        run: gpg --quiet --batch --yes --decrypt --passphrase="$PASSPHRASE" --output $GITHUB_WORKSPACE/secret.json secret.json.gpg
         env:
           PASSPHRASE: ${{secrets.PASSPHRASE}}
       - name: Print file contents
-        run: cat $HOME/secret.json      
+        run: cat $GITHUB_WORKSPACE/secret.json      
