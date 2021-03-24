@@ -1,4 +1,5 @@
 # github-actions-test
 
-updating some comments for dev branch
-additional changes
+
+## Filter pattern cheat sheet
+https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#filter-pattern-cheat-sheet
