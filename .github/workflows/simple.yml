@@ -2,7 +2,7 @@ name: Shell commands
 on: 
   push:
     branches:
-      - master
+      #- master
       - 'feature/*' # matches feature/featureA, feature/featureB
     tags:
       - v1.*
