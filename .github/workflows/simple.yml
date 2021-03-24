@@ -2,7 +2,10 @@ name: Shell commands
 on: 
   push:
     branches:
-      - master
+      #- master
+      - 'feature/*' # matches feature/featureA, feature/featureB
+    tags:
+      - v1.*
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
