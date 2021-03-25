@@ -5,15 +5,15 @@ jobs:
   node-version:
     strategy:
       matrix:
-        os: [macos_latest, windows_latest,ubuntu_latest ]
+        os: [macos-latest, windows-latest,ubuntu-latest ]
         node-version: [8, 10, 12]
         exclude:
           - os: ubuntu-latest
             node_version: 8
             is_ubuntu_8: true
-          - os: macos_latest
+          - os: macos-latest
             node_version: 8
-          - os: windows_latest
+          - os: windows-latest
             node_version: 8
       #fail-fast: true
       max-parallel: 2
