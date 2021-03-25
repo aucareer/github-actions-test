@@ -1,5 +1,5 @@
 name: Decrypt file
-on: push
+on: workflow_dispatch
 jobs:
   decrypt-file:
     runs-on: ubuntu-latest
