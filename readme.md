@@ -14,3 +14,6 @@ https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-g
 
 # Functions
 https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#functions
+
+# setup-node
+https://github.com/actions/setup-node
