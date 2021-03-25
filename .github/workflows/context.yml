@@ -2,7 +2,16 @@ name: Context Workflow
 on: push
 
 jobs:
-  one:
+  functions-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: dump
+        run: |
+          echo ${{ contains('hello', 'll')}}
+          echo ${{ startsWith('hello', 'he')}}
+          echo ${{ endsWith('hello', 'lo')}}
+          echo ${{ format('hello {0} {1} {2}', 'World','!','!')}}
+  one-Context:
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
